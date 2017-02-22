@@ -110,14 +110,14 @@
           node.parentNode.insertBefore(gads, node);
           })();
         var is_mobile = /Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        var quiz_ad_tag = 'quiz';
-        if ( typeof appConfig.ad_tag !== 'undefined' ) quiz_ad_tag += '-' + appConfig.ad_tag;
+        var project_ad_tag = 'longform';
+        if ( typeof appConfig.ad_tag !== 'undefined' ) project_ad_tag += '-' + appConfig.ad_tag;
         </script>
         <script>
       if( !is_mobile ) {
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/NYDN/Interactive',  [[728, 90]], 'div-gpt-ad-x101').addService(googletag.pubads())
-          .setTargeting("interactive",quiz_ad_tag)
+          .setTargeting("interactive",project_ad_tag)
           .setTargeting("position","x50");
           googletag.pubads().enableSingleRequest();
           googletag.enableServices();
@@ -128,7 +128,7 @@
       if( !is_mobile ) {
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-1').addService(googletag.pubads())
-          .setTargeting("interactive",quiz_ad_tag)
+          .setTargeting("interactive",project_ad_tag)
           .setTargeting("position","x55");
           googletag.pubads().enableSingleRequest();
           googletag.enableServices();
@@ -139,7 +139,7 @@
       if( !is_mobile ) {
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-2').addService(googletag.pubads())
-          .setTargeting("interactive",quiz_ad_tag)
+          .setTargeting("interactive",project_ad_tag)
           .setTargeting("position","x55");
           googletag.pubads().enableSingleRequest();
           googletag.enableServices();
@@ -150,7 +150,7 @@
       if( !is_mobile ) {
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-3').addService(googletag.pubads())
-          .setTargeting("interactive",quiz_ad_tag)
+          .setTargeting("interactive",project_ad_tag)
           .setTargeting("position","x86");
           googletag.pubads().enableSingleRequest();
           googletag.enableServices();
@@ -162,7 +162,7 @@
         if( is_mobile ) {        
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/M.NYDN/Interactive', [[320, 50]], 'div-gpt-ad-x101').addService(googletag.pubads())
-          .setTargeting("interactive",quiz_ad_tag)
+          .setTargeting("interactive",project_ad_tag)
           .setTargeting("position","x101");
           googletag.pubads().enableSingleRequest();
           googletag.enableServices();
@@ -173,7 +173,7 @@
         if( is_mobile ) {        
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-1').addService(googletag.pubads())
-          .setTargeting("interactive",quiz_ad_tag)
+          .setTargeting("interactive",project_ad_tag)
           .setTargeting("position","x35");
           googletag.pubads().enableSingleRequest();
           googletag.enableServices();
@@ -184,7 +184,7 @@
         if( is_mobile ) {        
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-2').addService(googletag.pubads())
-          .setTargeting("interactive",quiz_ad_tag)
+          .setTargeting("interactive",project_ad_tag)
           .setTargeting("position","x36");          
           googletag.pubads().enableSingleRequest();
           googletag.enableServices();
@@ -195,7 +195,7 @@
         if( is_mobile ) {        
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-3').addService(googletag.pubads())
-          .setTargeting("interactive",quiz_ad_tag)
+          .setTargeting("interactive",project_ad_tag)
           .setTargeting("position","x37");
           googletag.pubads().enableSingleRequest();
           googletag.enableServices();
@@ -284,7 +284,7 @@
         </div>
         <div id="rh-center">
             <a id="rh-logo" href="http://www.nydailynews.com">New York Daily News</a> 
-            <a id="rh-front" href="http://interactive.nydailynews.com/quiz/"> Quizzes </a>
+            <a id="rh-front" href="http://interactive.nydailynews.com/longform/"> Longform </a>
         </div>
         <div id="rh-right">
             <div id="rh-ssm">
@@ -373,8 +373,9 @@
 
         <!-- CUSTOM JS GOES HERE-->
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script src="config.js"></script>
+<!--
         <script src="../js/script.js?v3"></script>
+-->
   </div>  
 
   <div class="center" style="margin-bottom: 18px">
