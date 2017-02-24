@@ -331,7 +331,23 @@ float: left;font-size: 97px;line-height: 70px;color: #333;padding: 10px 10px 10p
   font-size: 11px;
   font-family: "Open Sans";
   line-height: normal;
+}
+
+.hide { display:none; }
 
 
-  
+.center {
+    text-align: center;
+    margin: auto
+}
+@media only screen and (min-width: 800px) {
+    #rh-subscribe { top:0px!important; }
+}
+.advertisement {
+    font-size:10px;
+    color:#999;
+    font-family:sans-serif;
+}
+#ra-main h1 {
+    font:  3em/2em "Open Sans Condensed";
 }
