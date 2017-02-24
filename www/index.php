@@ -18,14 +18,10 @@ $csv = new parseCSV('data.csv');
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
     <!-- TITLES-->
-    <meta property="og:title" content='TITLE' />
-    <meta name="twitter:title" content='TITLE'/>
     <meta name="parsely-title" content='TITLE' />
 
     <!-- DESCRIPTION-->
     <meta name="description" content="DESCRIPTION" />
-    <meta property="og:description" content="DESCRIPTION" />
-    <meta name="twitter:description" content="DESCRIPTION" />
 
     <!-- KEYWORD -->
     <meta name="keywords" content="KEYWORDS" />
@@ -38,18 +34,10 @@ $csv = new parseCSV('data.csv');
     <meta name="twitter:url" content="CANONICALURL">
     <meta name="parsely-link" content="CANONICALURL" />
 
-    <!-- THUMBNAIL IMAGE-->
-    <meta property="og:image" content="CANONICALURLimg/IMGNAME.jpg" />
-    <meta name="twitter:image:src" content="CANONICALURLimg/IMGNAME.jpg" />
-    <meta name="parsely-image-url" content="CANONICALURLimg/IMGNAME.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="800" />
-
     <!-- TIME -->
     <meta name="parsely-pub-date" content="2017-02-24T11:00:00Z" />
 
     <!-- NO NEED TO FILL -->
-    <meta name="twitter:card" content="summary">
     <meta name="twitter:domain" content="http://interactive.nydailynews.com"/>
     <meta name="twitter:site" content="@nydailynews">
     <meta name="parsely-type" content="post" />
