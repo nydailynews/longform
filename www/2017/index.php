@@ -1,12 +1,12 @@
 <?php
 //include('env.php');
 //include(CLASS_PATH . 'class.csv.php');
-include('../class.csv.php');
-$csv = new parseCSV('data.csv');
+include('../../class.csv.php');
+$csv = new parseCSV('../data.csv');
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Longform articles, by the NY Daily News</title>
+    <title>Longform articles, 2017, by the NY Daily News</title>
     <link rel="icon" type="image/png" href="http://interactive.nydailynews.com/favicons.png">
 	<!-- DEFAULT -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -18,21 +18,21 @@ $csv = new parseCSV('data.csv');
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
     <!-- Longform articlesS-->
-    <meta name="parsely-title" content='Longform articles' />
+    <meta name="parsely-title" content='Longform articles, 2017' />
 
     <!-- An index of the NY Daily News longform articles-->
-    <meta name="description" content="An index of the NY Daily News longform articles" />
+    <meta name="description" content="An index of the NY Daily News longform articles published in 2017" />
 
     <!-- KEYWORD -->
-    <meta name="keywords" content="journalism,new york city" />
-    <meta name="news_keywords" content="journalism,new york city" />
+    <meta name="keywords" content="journalism,new york city,2017" />
+    <meta name="news_keywords" content="journalism,new york city,2017" />
     <meta name="parsely-tags" content="interactive" />
 
     <!-- LINK -->
-    <link rel="canonical" href="http://interactive.nydailynews.com/longform/">
-    <meta property="og:url" content="http://interactive.nydailynews.com/longform/" />
-    <meta name="twitter:url" content="http://interactive.nydailynews.com/longform/">
-    <meta name="parsely-link" content="http://interactive.nydailynews.com/longform/" />
+    <link rel="canonical" href="http://interactive.nydailynews.com/longform/2017/">
+    <meta property="og:url" content="http://interactive.nydailynews.com/longform/2017/" />
+    <meta name="twitter:url" content="http://interactive.nydailynews.com/longform/2017/">
+    <meta name="parsely-link" content="http://interactive.nydailynews.com/longform/2017/" />
 
     <!-- TIME -->
     <meta name="parsely-pub-date" content="2017-02-24T11:00:00Z" />
@@ -81,8 +81,8 @@ $csv = new parseCSV('data.csv');
     <script>
     var nydnDO = [
         { 
-            'title':'xxxLongform articlesxxx', 
-            'link':'http://interactive.nydailynews.com/longform/', 
+            'title':'xxxLongform articles, 2017xxx', 
+            'link':'http://interactive.nydailynews.com/longform/2017/', 
             'p_type':'interactive', 
             'section':'interactive' }
     ];
@@ -322,7 +322,7 @@ $csv = new parseCSV('data.csv');
             <div class="rho-subscribe-bg" style=""></div>
         </div>
     </div>
-<nav id="rh-subnav"> <div id="rh-subnav-wrap"><ul class="ra-share" id="ra-share-top"> <li class="ra-share-f"> <a target="_blank" href="#">facebook</a> </li> <br clear="all"> <li class="ra-share-t"> <a target="_blank" href="https://twitter.com/intent/tweet?text=An index of the NY Daily News longform articles%20http://interactive.nydailynews.com/longform/">Tweet</a> </li>  <li class="ra-share-e"> <a href="mailto:?subject=Longform articles&amp;body=An index of the NY Daily News longform articles %0A%0A http://interactive.nydailynews.com/longform/">email</a> </li> </ul></div></div>
+<nav id="rh-subnav"> <div id="rh-subnav-wrap"><ul class="ra-share" id="ra-share-top"> <li class="ra-share-f"> <a target="_blank" href="#">facebook</a> </li> <br clear="all"> <li class="ra-share-t"> <a target="_blank" href="https://twitter.com/intent/tweet?text=An index of the NY Daily News longform articles%20http://interactive.nydailynews.com/longform/2017/">Tweet</a> </li>  <li class="ra-share-e"> <a href="mailto:?subject=Longform articles&amp;body=An index of the NY Daily News longform articles %0A%0A http://interactive.nydailynews.com/longform/2017/">email</a> </li> </ul></div></div>
  </nav>
 </header>
 <!-- SITEHEADER-END -->
@@ -330,11 +330,13 @@ $csv = new parseCSV('data.csv');
 
 <main id="ra-main"> <div id="ra-body-wrap">                    
 
-	<h1>Longform articles</h1>
+	<h1>Longform articles, 2017</h1>
 	<p>Recent selections from the NY Daily News' longform investigations and features.</p>
 <?php
 $prev_year = '';
 foreach ( $csv->data as $key => $item ):
+	if ( $item['year'] != '2017' ) continue;
+
 	if ( $item['year'] != $prev_year ): ?>
 	<h2><?php echo $item['year']; ?> longforms</h2>
 <?php endif;
@@ -368,7 +370,7 @@ endforeach;
 </div>
 </main>
         <!-- CUSTOM CSS GOES HERE-->
-        <link href="css/style.css?v2" rel="stylesheet" type="text/css" />
+        <link href="../css/style.css?v2" rel="stylesheet" type="text/css" />
 
         <!-- CUSTOM JS GOES HERE-->
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
