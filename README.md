@@ -11,7 +11,7 @@ The Daily News' longform article template
 ```
 ## Images
 There are four types on images on the page:
-| Class| Display
+| Class| Display|
 | ------------- |-------------|
 | ra-enlarge      | ```<p><figure class="ra-figure">  <span class="ra-enlarge"></span><img alt="NYDN front page Jam Master Jay" src="img/jay-cover.jpg">   <figcaption>  <h2 class="ra-caption" itemprop="description"></h2>    <span class="ra-credit" itemprop="copyrightHolder"></span>   </figcaption> </figure></p>```
 | col 2 is      | centered      |   $12 |
