@@ -11,11 +11,21 @@ The Daily News' longform article template
 ```
 ## Images
 There are four types on images on the page:
-| Class| Display|
-| ------------- |-------------|
-| ra-enlarge      | ```<p><figure class="ra-figure">  <span class="ra-enlarge"></span><img alt="NYDN front page Jam Master Jay" src="img/jay-cover.jpg">   <figcaption>  <h2 class="ra-caption" itemprop="description"></h2>    <span class="ra-credit" itemprop="copyrightHolder"></span>   </figcaption> </figure></p>```
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+* ra-enlarge: single image with an enlarge (+) icon
+``` html
+<p><figure class="ra-figure"><span class="ra-enlarge"></span><img alt="ALT TEXT">   <figcaption>  <h2 class="ra-caption" itemprop="description"></h2>    <span class="ra-credit" itemprop="copyrightHolder"></span>   </figcaption> </figure></p>
+```
+* double truck: Two images side-by-side
+```html
+<aside class="double-truck">
+    <figure class="ra-figure"><img alt="" src="img/#.jpg"></figure>
+    <figure class="ra-figure"><img alt="" src="img/#.jpg">
+    </figure>
+    <figcaption>
+    <h2 class="ra-caption clear" itemprop="description">ASDFASDFASDF-The image caption goes here-ASDFASDFASDF.</h2> 
+    </figcaption>
+</aside>
+```
 ## iframe embed
 ```html
 <h1>this is markup</h1>
