@@ -1,7 +1,9 @@
 # Longform
 The Daily News' longform article template
 
-## Header Image & sticky horizontal scroll menu
+## Page elements
+
+### Header Image & sticky horizontal scroll menu
 ```html
 <section id="ra-ss-header">
     <img alt="" src="HEADER IMAGE HERE">
@@ -30,7 +32,7 @@ The Daily News' longform article template
         </div>
 </section>
 ```
-## Images
+### Images
 There are six types on images on the page:
 * single image: one image that goes across the article
 ``` html
@@ -102,7 +104,7 @@ There are six types on images on the page:
 }
 </style>
 ```
-## iframe embeds
+### iframe embeds
 General iframe, including YouTube
 ```html
 <p><iframe width="100%" height="400" src="SOURCE GOES HERE" frameborder="0" allowfullscreen=""></iframe></p>
@@ -117,11 +119,11 @@ Instagram
     </figure>
 </aside>
 ```
-## Dropcaps
+### Dropcaps
 ```html
 <p class="first"></p>
 ```
-## Block quote
+### Block quote
 ```html
 <blockquote>“You can make so much money in there, you kind of get lost in the money.”</blockquote>
 ```
@@ -131,7 +133,7 @@ Instagram
 }
 </style>
 ```
-## Subhed
+### Subhed
 ```html
 <style>{
     display: block;
@@ -141,6 +143,10 @@ Instagram
 }
 </style>
 ```
-## Global vs. Project-based CSS
-Paragraph
+
+## Longform-global vs. specific-longform CSS
+We keep the styles used on all longforms and the longform indexes in [style.css](blob/master/www/css/style.css). Each longform article also has its own article-specific stylesheet, usually in `path/to/longform/css/project.css`. Why do some styles go in `style.css` and not `project.css`? Well, if it's a style rule that can *and will* be used across multiple longforms, put it in style.css. Otherwise, to the project.css it goes.
+
+### Example: [Sin City](http://interactive.nydailynews.com/longform/2017/inside-sin-city-bronx-strip-club-anything-goes)
+The Sin City longform uses a particular type of navigation to help readers skip to a particular chapter in the story. The CSS for that's stored in its [project.css](http://interactive.nydailynews.com/longform/2017/inside-sin-city-bronx-strip-club-anything-goes/css/project.css) (about halfway down).
 
