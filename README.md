@@ -31,7 +31,7 @@ The Daily News' longform article template
 </section>
 ```
 ## Images
-There are five types on images on the page:
+There are six types on images on the page:
 * single image: one image that goes across the article
 ``` html
 <aside class="full">
@@ -125,7 +125,7 @@ Instagram
 ```html
 <blockquote>“You can make so much money in there, you kind of get lost in the money.”</blockquote>
 ```
-``css
+```css
 <style>{
     .ra-figure:before
 }
