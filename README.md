@@ -148,19 +148,19 @@ Instagram
 HEADLINE
 ```
 <h3 class="timeline-title" style="margin-bottom:0">ALL CAPS HED HERE</h3>
-```
-CONTENT
+```html
+CONTENT<br>
 Link two stylesheets
-```
+```html
 <link rel="stylesheet" type="text/css" href="css/slick.css"/>
 <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 ```
 Add the javascript file
-```
+```html
 <script type="text/javascript" src="js/slick.min.js"></script>
 ```
 The timeline images
-```
+```html
 <div class="timeline-holder slick-initialized slick-slider slick-dotted" role="toolbar">
     <button type="button" data-role="none" class="slick-prev slick-arrow slick-disabled" aria-label="Previous" role="button" aria-disabled="true" style="display: block;">Previous</button>
     <div aria-live="polite" class="slick-list draggable">
@@ -171,11 +171,12 @@ The timeline images
                     <div><figure><img class="t" alt="ALT TEXT" src="IMAGE GOES HERE" data-pin-nopin="true">
                     <figcaption><h2 class="t-caption" itemprop="description">PHOTO CAPTION GOES HERE <a target="_blank" href="http://www.nydailynews.com/news/politics/cuomo-criticizes-de-blasio-tax-plan-wealthy-article-1.1486929" tabindex="0">CAPTION LINK</a> caption contines over here and here and here.</h2>
                     <span class="ra-credit" itemprop="copyrightHolder">(PHOTOGRAPHER CREDIT)</span></figcaption></figure></div>
-                    <p class="timeline-slug">PRE-K KERFUFFLE</p>
+                    <p class="timeline-slug">SUBHED UNDER PHOTO</p>
                 </div>
             </div>
         </div>
     </div>
+</div>
 ```
 
 ## Longform-global vs. specific-longform CSS
