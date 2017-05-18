@@ -397,3 +397,21 @@ article#ra-body aside.vertical {
         width: 400px;
     }
 }
+
+
+
+h2 {
+    font: bold 50px/55px "Open Sans Condensed";
+    margin-top: 60px;
+}
+@media (max-width: 727px) {
+    #ra-ss-header { min-height: 70px; }
+    h2 {
+        font: bold 30px/35px "Open Sans Condensed";
+        margin-top: 30px;
+    }
+}
+#ra-ss-header:after { background: transparent; }
+.clear { clear: both; }
+#ra-body blockquote { cursor: default; }
+#ra-body blockquote:before { content: ''; }
