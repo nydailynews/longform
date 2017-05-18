@@ -270,8 +270,6 @@ dek{
 }
 
  
-
-  
 }
 
 /* iphone */
@@ -335,13 +333,13 @@ float: left;font-size: 97px;line-height: 70px;color: #333;padding: 10px 10px 10p
 
 .hide { display:none; }
 
-
 .center {
     text-align: center;
     margin: auto
 }
 @media only screen and (min-width: 800px) {
     #rh-subscribe { top:0px!important; }
+    .ra-figure figcaption { padding-bottom:25px; }
 }
 .advertisement {
     font-size:10px;
@@ -352,7 +350,6 @@ float: left;font-size: 97px;line-height: 70px;color: #333;padding: 10px 10px 10p
     font:  3em/2em "Open Sans Condensed";
 }
 
-.ra-figure figcaption { padding-bottom:10px; }
 
 article#ra-body aside {
     max-width: 400px;
@@ -392,9 +389,6 @@ article#ra-body aside.vertical {
     width: 300px;
 }
 @media only screen and (max-width: 480px) {
-/*
-    .ra-caption { display: inline-block; }
-*/
     article#ra-body aside.left,
     article#ra-body aside.right { 
         max-width: 70%;
@@ -407,8 +401,6 @@ article#ra-body aside.vertical {
         width: 400px;
     }
 }
-
-
 
 h2 {
     font: bold 50px/55px "Open Sans Condensed";
