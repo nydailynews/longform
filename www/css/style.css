@@ -363,6 +363,11 @@ article#ra-body aside.full {
     width: 59%;
     margin: auto;
 }
+article#ra-body aside.fuller {
+    max-width: 75%;
+    width: 75%;
+    margin: auto;
+}
 article#ra-body aside.super {
     max-width: 100%;
     width: 100%;
