@@ -146,9 +146,9 @@ Instagram
 
 ### Photo Timeline
 HEADLINE
-```
-<h3 class="timeline-title" style="margin-bottom:0">ALL CAPS HED HERE</h3>
 ```html
+<h3 class="timeline-title" style="margin-bottom:0">ALL CAPS HED HERE</h3>
+```
 CONTENT<br>
 Link two stylesheets
 ```html
