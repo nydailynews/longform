@@ -144,9 +144,43 @@ Instagram
 </style>
 ```
 
+### Photo Timeline
+HEADLINE
+```html
+<h3 class="timeline-title" style="margin-bottom:0">ALL CAPS HED HERE</h3>
+```
+CONTENT<br>
+Link two stylesheets
+```html
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+```
+Add the javascript file
+```html
+<script type="text/javascript" src="js/slick.min.js"></script>
+```
+The timeline images
+```html
+<div class="timeline-holder slick-initialized slick-slider slick-dotted" role="toolbar">
+    <button type="button" data-role="none" class="slick-prev slick-arrow slick-disabled" aria-label="Previous" role="button" aria-disabled="true" style="display: block;">Previous</button>
+    <div aria-live="polite" class="slick-list draggable">
+        <div class="slick-track" style="opacity: 1; width: 4564px; transform: translate3d(0px, 0px, 0px);" role="listbox">
+            <div class="event slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 152px;" tabindex="-1" role="option" aria-describedby="slick-slide10">
+                <p class="timeline-date">Oct. 15, 2013</p>
+                <div class=".hidden">
+                    <div><figure><img class="t" alt="ALT TEXT" src="IMAGE GOES HERE" data-pin-nopin="true">
+                    <figcaption><h2 class="t-caption" itemprop="description">PHOTO CAPTION GOES HERE <a target="_blank" href="http://www.nydailynews.com/news/politics/cuomo-criticizes-de-blasio-tax-plan-wealthy-article-1.1486929" tabindex="0">CAPTION LINK</a> caption contines over here and here and here.</h2>
+                    <span class="ra-credit" itemprop="copyrightHolder">(PHOTOGRAPHER CREDIT)</span></figcaption></figure></div>
+                    <p class="timeline-slug">SUBHED UNDER PHOTO</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
 ## Longform-global vs. specific-longform CSS
 We keep the styles used on all longforms and the longform indexes in [style.css](blob/master/www/css/style.css). Each longform article also has its own article-specific stylesheet, usually in `path/to/longform/css/project.css`. Why do some styles go in `style.css` and not `project.css`? Well, if it's a style rule that can *and will* be used across multiple longforms, put it in style.css. Otherwise, to the project.css it goes.
 
 ### Example: [Sin City](http://interactive.nydailynews.com/longform/2017/inside-sin-city-bronx-strip-club-anything-goes)
 The Sin City longform uses a particular type of navigation to help readers skip to a particular chapter in the story. The CSS for that's stored in its [project.css](http://interactive.nydailynews.com/longform/2017/inside-sin-city-bronx-strip-club-anything-goes/css/project.css) (about halfway down).
-
