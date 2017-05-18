@@ -48,11 +48,15 @@ There are six types on images on the page:
 ```
 * ra-enlarge: single image with an enlarge (+) icon
 ``` html
-<p><figure class="ra-figure"><span class="ra-enlarge"></span><img alt="ALT TEXT" src="IMAGE SOURCE">
-    <figcaption>
-        <p class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</p>
-        <span class="ra-credit" itemprop="copyrightHolder">(PHOTO CREDIT GOES HERE)</span>
-    </figcaption>
+<p>
+    <figure class="ra-figure"><span class="ra-enlarge"></span>
+        <img alt="ALT TEXT" src="IMAGE SOURCE">
+        <figcaption>
+            <p class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</p>
+            <span class="ra-credit" itemprop="copyrightHolder">(PHOTO CREDIT GOES HERE)</span>
+        </figcaption>
+    </figure>
+</p>
 ```
 * double truck: Two images side-by-side
 ```html
@@ -69,10 +73,10 @@ There are six types on images on the page:
 ```html
 <aside class="right vertical">
     <figure class="ra-figure"><img alt="ALT TEXT" src="IMAGE SOURCE">
-    <figcaption>
-        <p class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</p>
-        <span class="ra-credit" itemprop="copyrightHolder">(PHOTO CREDIT GOES HERE)</span>
-    </figcaption>
+        <figcaption>
+            <p class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</p>
+            <span class="ra-credit" itemprop="copyrightHolder">(PHOTO CREDIT GOES HERE)</span>
+        </figcaption>
     </figure>
 </aside>
 ```
@@ -80,10 +84,10 @@ There are six types on images on the page:
 ```html
 <aside class="left vertical">
     <figure class="ra-figure"><img alt="ALT TEXT" src="IMAGE SOURCE">
-    <figcaption>
-        <p class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</p>
-        <span class="ra-credit" itemprop="copyrightHolder">(PHOTO CREDIT GOES HERE)</span>
-    </figcaption>
+        <figcaption>
+            <p class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</p>
+            <span class="ra-credit" itemprop="copyrightHolder">(PHOTO CREDIT GOES HERE)</span>
+        </figcaption>
     </figure>
 </aside>
 ```
@@ -91,10 +95,10 @@ There are six types on images on the page:
 ```html
 <aside class="right">
     <figure class="ra-figure"><img alt="ALT TEXT" src="IMAGE SOURCE">
-    <figcaption>
-        <p class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</p>
-        <span class="ra-credit" itemprop="copyrightHolder">(PHOTO CREDIT GOES HERE)</span>
-    </figcaption>
+        <figcaption>
+            <p class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</p>
+            <span class="ra-credit" itemprop="copyrightHolder">(PHOTO CREDIT GOES HERE)</span>
+        </figcaption>
     </figure>
 </aside>
 ```
@@ -115,7 +119,7 @@ Instagram
     <figure class="instagram-video instagram ra-figure">
         <iframe src="INSTAGRAM LINK GOES HERE" allowtransparency="true" frameborder="0" height="400" scrolling="no" style="background: rgb(255, 255, 255); border: 1px solid rgb(219, 219,219); margin: 1px 1px 12px; max-width: 658px; width: calc(100% - 2px); border-radius: 4px; box-shadow: none; display: block; padding: 0px;">
         </iframe>
-    <script async="" defer="" src="//platform.instagram.com/en_US/embeds.js"></script>
+    <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
     </figure>
 </aside>
 ```
@@ -157,7 +161,7 @@ Link two stylesheets
 ```
 Add the javascript file
 ```html
-<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/slick.min.js"></script>
 ```
 The timeline images
 ```html
