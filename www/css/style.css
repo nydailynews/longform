@@ -351,3 +351,5 @@ float: left;font-size: 97px;line-height: 70px;color: #333;padding: 10px 10px 10p
 #ra-main h1 {
     font:  3em/2em "Open Sans Condensed";
 }
+
+.ra-figure figcaption { padding-bottom:10px; }
