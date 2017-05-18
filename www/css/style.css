@@ -353,3 +353,47 @@ float: left;font-size: 97px;line-height: 70px;color: #333;padding: 10px 10px 10p
 }
 
 .ra-figure figcaption { padding-bottom:10px; }
+
+article#ra-body aside {
+    max-width: 400px;
+    width: 400px;
+}
+article#ra-body aside.full {
+    max-width: 75%;
+    width: 75%;
+    margin: auto;
+}
+article#ra-body aside.wide,
+article#ra-body aside.double-truck {
+    max-width: 100%;
+    width: 100%; 
+}
+article#ra-body aside.double-truck figure { float: left; width: 50%; }
+article#ra-body aside.right {
+    float: right;
+    margin-left: 10px;
+}
+article#ra-body aside.left {
+    float: left;
+    margin-right: 10px;
+}
+article#ra-body aside.vertical {
+    max-width: 300px;
+    width: 300px;
+}
+@media only screen and (max-width: 480px) {
+/*
+    .ra-caption { display: inline-block; }
+*/
+    article#ra-body aside.left,
+    article#ra-body aside.right { 
+        max-width: 70%;
+        width: 70%;
+        margin: auto;
+        float: none; 
+    }
+    article#ra-body aside.vertical {
+        max-width: 400px;
+        width: 400px;
+    }
+}
