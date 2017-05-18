@@ -40,9 +40,9 @@ There are six types on images on the page:
     <figure class="ra-figure">
         <img alt="ALT TEXT" src="IMAGE SOURCE.jpg">
         <figcaption>
-        <h2 class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</h2>
-        <span class="ra-credit" itemprop="copyrightHolder">(PHOTO CREDIT IN PARENTHESES)</span>
-    </figcaption>
+            <p class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</p>
+            <span class="ra-credit" itemprop="copyrightHolder">(PHOTO CREDIT IN PARENTHESES)</span>
+        </figcaption>
     </figure>
 </aside>
 ```
@@ -50,7 +50,7 @@ There are six types on images on the page:
 ``` html
 <p><figure class="ra-figure"><span class="ra-enlarge"></span><img alt="ALT TEXT" src="IMAGE SOURCE">
     <figcaption>
-        <h2 class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</h2>
+        <p class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</p>
         <span class="ra-credit" itemprop="copyrightHolder">(PHOTO CREDIT GOES HERE)</span>
     </figcaption>
 ```
@@ -60,7 +60,7 @@ There are six types on images on the page:
     <figure class="ra-figure"><img alt="" src="IMAGE SOURCE"></figure>
     <figure class="ra-figure"><img alt="" src="IMAGE SOURCE"></figure>
     <figcaption>
-        <h2 class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</h2>
+        <p class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</p>
         <span class="ra-credit" itemprop="copyrightHolder">(PHOTO CREDIT GOES HERE)</span>
     </figcaption>
 </aside>
@@ -70,7 +70,7 @@ There are six types on images on the page:
 <aside class="right vertical">
     <figure class="ra-figure"><img alt="ALT TEXT" src="IMAGE SOURCE">
     <figcaption>
-        <h2 class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</h2>
+        <p class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</p>
         <span class="ra-credit" itemprop="copyrightHolder">(PHOTO CREDIT GOES HERE)</span>
     </figcaption>
     </figure>
@@ -81,7 +81,7 @@ There are six types on images on the page:
 <aside class="left vertical">
     <figure class="ra-figure"><img alt="ALT TEXT" src="IMAGE SOURCE">
     <figcaption>
-        <h2 class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</h2>
+        <p class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</p>
         <span class="ra-credit" itemprop="copyrightHolder">(PHOTO CREDIT GOES HERE)</span>
     </figcaption>
     </figure>
@@ -92,7 +92,7 @@ There are six types on images on the page:
 <aside class="right">
     <figure class="ra-figure"><img alt="ALT TEXT" src="IMAGE SOURCE">
     <figcaption>
-        <h2 class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</h2>
+        <p class="ra-caption" itemprop="description">PHOTO CAPTION GOES HERE</p>
         <span class="ra-credit" itemprop="copyrightHolder">(PHOTO CREDIT GOES HERE)</span>
     </figcaption>
     </figure>
