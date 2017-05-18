@@ -417,6 +417,6 @@ h2 {
 .clear { clear: both; }
 #ra-body blockquote { cursor: default; }
 #ra-body blockquote:before { content: ''; }
-.ra-credit { text-transform: uppercase; }
 @media (min-width: 990px) { article#ra-body { float: none; } }
 
+.ra-byline span, .ra-credits, .ra-credit { text-transform: uppercase; }
