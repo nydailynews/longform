@@ -359,8 +359,13 @@ article#ra-body aside {
     width: 400px;
 }
 article#ra-body aside.full {
-    max-width: 75%;
-    width: 75%;
+    max-width: 59%;
+    width: 59%;
+    margin: auto;
+}
+article#ra-body aside.super {
+    max-width: 100%;
+    width: 100%;
     margin: auto;
 }
 article#ra-body aside.wide,
