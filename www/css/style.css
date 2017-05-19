@@ -463,3 +463,17 @@ div.ra-gallery{
 div.ra-count {
     color: #000;
 }
+
+/* CSS for the gallery promos */
+.gallery-wrap {
+    height: 50px;
+    overflow: hidden;
+}
+#ra-body .ra-gallery {
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+.gallery-wrap .ra-gallery .ra-count {
+    color: black;
+}
