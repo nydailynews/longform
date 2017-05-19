@@ -468,6 +468,7 @@ div.ra-count {
 .gallery-wrap {
     height: 50px;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 #ra-body .ra-gallery {
     background-color: transparent;
