@@ -454,3 +454,12 @@ article#ra-body aside.related-articles {
 
 h1 { text-indent: -6000px; }
 nav#rh-subnav { display: none; }
+
+div.ra-gallery{
+    background: #FFF;
+    height: 0;
+}
+
+div.ra-count {
+    color: #000;
+}
