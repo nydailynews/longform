@@ -420,14 +420,13 @@ h2 {
 
 .ra-date-published, .ra-byline span, .ra-credits, .ra-credit { text-transform: uppercase; }
 
-
-.related-articles {
-    border-top: 1px solid #000;
-    max-width: 380px;
+article#ra-body aside.related-articles {
+    border-top: 1px solid #666;
+    max-width: 320px;
     float: left;
     clear: left;
     margin: 0 30px 40px 0;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #666;
 }
 .related-articles h4 {
     text-transform: uppercase;
@@ -448,7 +447,7 @@ h2 {
     margin-left: 25px;
 }
 @media (max-width: 990px) { 
-    .related-articles {
+    article#ra-body aside.related-articles {
         width: 50%;
     }
 }
