@@ -350,7 +350,6 @@ float: left;font-size: 97px;line-height: 70px;color: #333;padding: 10px 10px 10p
     font:  3em/2em "Open Sans Condensed";
 }
 
-
 article#ra-body aside {
     max-width: 400px;
     width: 400px;
@@ -420,3 +419,31 @@ h2 {
 @media (min-width: 990px) { article#ra-body { float: none; } }
 
 .ra-byline span, .ra-credits, .ra-credit { text-transform: uppercase; }
+
+.related-articles {
+    border-top: 1px solid #000;
+    max-width: 380px;
+    float: left;
+    clear: left;
+    margin: 0 30px 40px 0;
+    border-bottom: 1px solid #000;
+}
+.related-articles h4 {
+    text-transform: uppercase;
+    color: red;
+    font-family: "Open Sans Condensed";
+    margin-left: 25px;
+}
+
+.related-articles ul li{
+    font-size: 15px;
+    margin-left: 25px;
+    list-style-type: none;
+}
+
+.related-articles img {
+    max-width: 250px;
+    margin-left: 25px;
+}
+h1 { text-indent: -6000px; }
+nav#rh-subnav { display: none; }
