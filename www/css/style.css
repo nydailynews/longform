@@ -418,7 +418,7 @@ h2 {
 #ra-body blockquote:before { content: ''; }
 @media (min-width: 990px) { article#ra-body { float: none; } }
 
-.ra-byline span, .ra-credits, .ra-credit { text-transform: uppercase; }
+.ra-date-published, .ra-byline span, .ra-credits, .ra-credit { text-transform: uppercase; }
 
 .related-articles {
     border-top: 1px solid #000;
