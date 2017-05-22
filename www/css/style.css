@@ -442,9 +442,8 @@ article#ra-body aside.related-articles {
 
 .related-articles li{
     font-size: 15px;
-    margin-left: 25px;
     list-style-type: none;
-    margin: 12px 0;
+    margin-bottom: 12px;
     line-height: 20px;
 }
 
@@ -453,13 +452,14 @@ article#ra-body aside.related-articles {
     margin-left: 25px;
 }
 
-@media (min-width: 50px) {
-  .related-articles img {
-    width: 50%;
+@media (max-width: 760px) {
+  aside.related-articles {
+    width: 100%;
+    float: none;
   }
 }
 
-@media (max-width: 990px) { 
+@media screen (max-width: 990px) and (min-width: 761px){ 
     article#ra-body aside.related-articles {
         width: 50%;
     }
