@@ -453,10 +453,10 @@ article#ra-body aside.related-articles {
 }
 
 @media (max-width: 760px) {
-  aside.related-articles {
-    width: 100%;
-    float: none;
-  }
+    article#ra-body aside.related-articles {
+        width: 100%;
+        float: none;
+    }
 }
 
 @media screen (max-width: 990px) and (min-width: 761px){ 
