@@ -341,6 +341,7 @@ foreach ( $csv->data as $key => $item ):
 	<h2><?php echo $item['year']; ?> longforms</h2>
 <?php endif;
 	echo "		<li><a href='" . $item['url'] . "'>" . $item['title'] . "</a></li>\n";
+	$prev_year = $item['year'];
 endforeach;
 ?>
 
