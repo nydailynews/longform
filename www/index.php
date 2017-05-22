@@ -26,7 +26,7 @@ $csv = new parseCSV('data.csv');
     <!-- KEYWORD -->
     <meta name="keywords" content="journalism,new york city" />
     <meta name="news_keywords" content="journalism,new york city" />
-    <meta name="parsely-tags" content="interactive" />
+    <meta name="parsely-tags" content="interactive,interactive longform" />
 
     <!-- LINK -->
     <link rel="canonical" href="http://interactive.nydailynews.com/longform/">
@@ -111,35 +111,17 @@ $csv = new parseCSV('data.csv');
                 googletag.defineSlot('/4692832/NYDN/Interactive',  [[728, 90]], 'div-gpt-ad-x101').addService(googletag.pubads())
                 .setTargeting("interactive",project_ad_tag)
                 .setTargeting("position","x50");
-                googletag.pubads().enableSingleRequest();
-                googletag.enableServices();
             });
-        }
-        </script>
-      <script>
-        if( !is_mobile ) {
             googletag.cmd.push(function() {
                 googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-1').addService(googletag.pubads())
                 .setTargeting("interactive",project_ad_tag)
                 .setTargeting("position","x55");
-                googletag.pubads().enableSingleRequest();
-                googletag.enableServices();
             });
-        }
-        </script>
-        <script>
-        if( !is_mobile ) {
             googletag.cmd.push(function() {
                 googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-2').addService(googletag.pubads())
                 .setTargeting("interactive",project_ad_tag)
                 .setTargeting("position","x55");
-                googletag.pubads().enableSingleRequest();
-                googletag.enableServices();
             });
-        }
-        </script>
-      <script>
-        if( !is_mobile ) {
             googletag.cmd.push(function() {
                 googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-3').addService(googletag.pubads())
                 .setTargeting("interactive",project_ad_tag)
@@ -156,35 +138,17 @@ $csv = new parseCSV('data.csv');
                 googletag.defineSlot('/4692832/M.NYDN/Interactive', [[320, 50]], 'div-gpt-ad-x101').addService(googletag.pubads())
                 .setTargeting("interactive",project_ad_tag)
                 .setTargeting("position","x101");
-                googletag.pubads().enableSingleRequest();
-                googletag.enableServices();
             });
-        }
-        </script>  
-        <script>
-        if( is_mobile ) {        
             googletag.cmd.push(function() {
                 googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-1').addService(googletag.pubads())
                 .setTargeting("interactive",project_ad_tag)
                 .setTargeting("position","x35");
-                googletag.pubads().enableSingleRequest();
-                googletag.enableServices();
             });
-        }
-        </script>  
-        <script>
-        if( is_mobile ) {        
             googletag.cmd.push(function() {
                 googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-2').addService(googletag.pubads())
                 .setTargeting("interactive",project_ad_tag)
                 .setTargeting("position","x36");          
-                googletag.pubads().enableSingleRequest();
-                googletag.enableServices();
             });
-        }
-        </script>  
-        <script>
-        if( is_mobile ) {        
             googletag.cmd.push(function() {
                 googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-3').addService(googletag.pubads())
                 .setTargeting("interactive",project_ad_tag)
@@ -339,6 +303,7 @@ foreach ( $csv->data as $key => $item ):
 	<h2><?php echo $item['year']; ?> longforms</h2>
 <?php endif;
 	echo "		<li><a href='" . $item['url'] . "'>" . $item['title'] . "</a></li>\n";
+	$prev_year = $item['year'];
 endforeach;
 ?>
 
@@ -371,10 +336,7 @@ endforeach;
         <link href="css/style.css?v2" rel="stylesheet" type="text/css" />
 
         <!-- CUSTOM JS GOES HERE-->
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<!--
-        <script src="../js/script.js?v3"></script>
--->
+        <script src="/js/jquery.min.js"></script>
   </div>  
 
 <!-- FOOTER-START -->
