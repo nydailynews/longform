@@ -452,6 +452,13 @@ article#ra-body aside.related-articles {
     max-width: 250px;
     margin-left: 25px;
 }
+
+@media (min-width: 50px) {
+  .related-articles img {
+    width: 50%;
+  }
+}
+
 @media (max-width: 990px) { 
     article#ra-body aside.related-articles {
         width: 50%;
