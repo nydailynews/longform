@@ -323,6 +323,10 @@ float: left;font-size: 97px;line-height: 70px;color: #333;padding: 10px 10px 10p
 {
 float: left;font-size: 97px;line-height: 70px;color: #333;padding: 10px 10px 10px 10px;}
 
+.first-red:first-letter
+{
+float: left;font-size: 97px;line-height: 70px;color: #333;padding: 10px 10px 10px 10px; margin-left: -10px; color: #ef1c1b;}
+
 
 #nydn-credit{
 
@@ -379,6 +383,11 @@ article#ra-body aside.right {
     float: right;
     margin-left: 10px;
 }
+article#ra-body aside.double-truck figcaption {
+  line-height: 1;
+  padding-bottom: 25px;
+}
+
 article#ra-body aside.left {
     float: left;
     margin-right: 10px;
