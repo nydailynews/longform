@@ -70,13 +70,16 @@ $csv = new parseCSV('data.csv');
       
     <link rel="stylesheet" href="http://assets.nydailynews.com/nydn/c/rh.css?r=2016LIST">
     <link rel="stylesheet" href="http://assets.nydailynews.com/nydn/c/ra.css?r=2016LIST">
-	<link href="css/style.css?v2" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/ra.css">
+	<link href="/css/style.css?v2" rel="stylesheet" />
     <script>
     var nydn = nydn || {
         "section": "NYDailyNews",
+		"subsection": "news",
         "template": "article",
         "revision": "201609014009",
-        "targetPath": document.location.pathname
+		"targetPath": document.location.pathname,
+		"bidder": { contains: function() {} },
     };
     </script>
     <script>
@@ -102,8 +105,8 @@ $csv = new parseCSV('data.csv');
 <header id="templateheader"></header>
 <!-- SITEHEADER-END -->
 
-<main id="ra-main"> <div id="ra-body-wrap">                    
-
+<main> 
+	<article>
 	<h1>Longform articles</h1>
 	<p>Recent selections from the NY Daily News' longform investigations and features.</p>
 <?php
@@ -126,21 +129,9 @@ endforeach;
 		</script>
     </div>
   </div>
-<hr>
-<hr>
-  <div class="center" style="margin-bottom: 18px">
-    <span class="advertisement">ADVERTISEMENT</span>
-    <div id='div-gpt-ad-1423507761396-2'>
-		<script>
-			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-2'); });
-		</script>
-    </div>
-  </div>
-<hr>
-
  
   
-</div>
+	</article>
 </main>
 
         <!-- CUSTOM JS GOES HERE-->
