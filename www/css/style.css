@@ -507,3 +507,4 @@ div.ra-count {
     color: black;
 }
 .center-text { text-align: center; }
+#webpush-subscribe-container { display: none; }
